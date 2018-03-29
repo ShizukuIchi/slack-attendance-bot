@@ -1,12 +1,12 @@
 Slack Attendace Bot
 ===
 ## Start
-1. create slack app
-2. enable `Incoming Webhooks` and `Event Subscriptions` for the app (`Request URL` is `mydomain/slack/events`)
-3. subscribe to Event `message.im` events
-4. set `channelUrl` variable from `Webhook URL` section in `Incoming Webhooks`
-5. set token for the server
-6. start server and install slack app from slack api website
+1. Create slack app
+2. Enable `Incoming Webhooks` and `Event Subscriptions` for the app (`Request URL` is `mydomain/slack/events`)
+3. Subscribe to `message.channels` events in `Event Subscriptions`
+4. Set `CHANNEL_URL` from `Webhook URL` in `Incoming Webhooks`
+5. Set `TOKEN`, `DB_URL`, `CHANNEL_ID` (receive messages from) 
+6. Start server and install slack app from slack api website
 
 To start server:
 ```
@@ -15,9 +15,10 @@ node index.js
 ## Usage
 Send message to bot with:
 * `in`  
-  the bot will send a message to the specific channel url with text `change state to up at` *`hhmm`*.
+  Save a `in` record with timestamp
 
 * `out`  
-  the bot will send a message to the specific channel url with text `change state to down at` *`hhmm`*.
+  Save a `out` record with timestamp
 
-Changing the channel url by replacing the `channelUrl` variable.
+* `list`  
+  List all records for you
