@@ -1,8 +1,13 @@
 {
   "dependencies": {
     "@slack/events-api": "^1.0.1",
+    "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "knex": "^0.14.4",
+    "moment": "^2.21.0",
+    "pg": "^7.4.1"
   }
 }
