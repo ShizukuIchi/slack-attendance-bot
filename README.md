@@ -12,6 +12,8 @@ To start server:
 ```
 node index.js
 ```
+※ Your `.env` file should have `CHANNEL_URL`, `TOKEN`, `DB_URL`, `CHANNEL_ID`
+
 ## Usage
 Send message to bot with:
 * `in`  
@@ -22,3 +24,4 @@ Send message to bot with:
 
 * `list`  
   List all records for you
+
